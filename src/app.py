@@ -29,10 +29,13 @@ def main():
                 padding: 20px;
                 border-radius: 8px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 600px;
             }
             form {
                 display: flex;
                 flex-direction: column;
+                align-items: flex-start;
             }
             label {
                 margin-bottom: 8px;
@@ -44,6 +47,7 @@ def main():
                 border: 1px solid #ccc;
                 border-radius: 4px;
                 font-size: 16px;
+                width: 95%;
             }
             input[type="submit"] {
                 padding: 10px 15px;
@@ -87,7 +91,7 @@ def echo_input():
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Response</title>
+        <title>Web Application</title>
         <style>
             body {{
                 font-family: Arial, sans-serif;
@@ -104,6 +108,31 @@ def echo_input():
                 padding: 20px;
                 border-radius: 8px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 600px;
+                margin: 0 20px;
+            }}
+            p, ul {{
+                text-align: left;
+            }}
+            .buttons {{
+                display: flex;
+                justify-content: start;
+                margin-top: 20px;
+            }}
+            .button {{
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                background-color: #007BFF;
+                color: #fff;
+                font-size: 16px;
+                cursor: pointer;
+                text-decoration: none;
+                text-align: center;
+            }}
+            .button:hover {{
+                background-color: #0056b3;
             }}
         </style>
     </head>
@@ -117,6 +146,10 @@ def echo_input():
                 <li>IP Address: {ip_address}</li>
                 <li>Accept Language: {accept_language}</li>
             </ul>
+            <div class="buttons">
+                <button class="button" onclick="window.history.back()">Back</button>&nbsp;&nbsp;
+                <a href="https://mscs-web-app-8aaa125138dd.herokuapp.com/" class="button">Retry</a>
+            </div>
         </div>
     </body>
     </html>
