@@ -45,6 +45,8 @@ Push to the remote repository: git push -u origin main
 
 https://github.com/twtrubiks/Deploying-Flask-To-Heroku
 
+https://devcenter.heroku.com/articles/heroku-cli#download-and-install
+
 
 https://realpython.com/flask-by-example-part-1-project-setup/
 
