@@ -1,0 +1,42 @@
+
+# activate venv
+python3 -m venv venv && source venv/bin/activate
+
+# deactivate venv
+activate
+
+# to run Flask application
+flask run
+
+---8<------8<------8<------8<------8<------8<------8<------8<------8<------8<------8<------8<------8<---
+
+#Create a new directory for the application, and then make that directory your current working directory: 
+mkdir mscs_web_app && cd mscs_web_app
+
+# Create the virtual environment and source the activation script:
+python3 -m venv venv && source venv/bin/activate
+
+#Create a source folder: 
+mkdir src
+
+# Create the application file: 
+touch src/app.py
+
+# Install Flask: 
+pip install Flask
+
+# Tell the system which file is the application file: 
+export FLASK_APP=src/app.py
+
+---8<------8<------8<------8<------8<------8<------8<------8<------8<------8<------8<------8<------8<---
+
+https://github.com/ksmooi/mscs_web_app.git
+
+Afterwards, you will be presented with the URL for the remote repository. It typically follows the format git@github.com:<username>/<repo_name>.git.
+
+Return to the root directory of your Flask application and initialize a Git reporistory as well as add and stage the files: git init && git add . && git commit -m "First Commit" && git branch -M main
+
+Next add the URL for the remote origin: git remote add origin <remote_url>, using the remote URL from step 3.
+
+Push to the remote repository: git push -u origin main
+
