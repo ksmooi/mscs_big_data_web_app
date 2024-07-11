@@ -12,7 +12,7 @@ def main():
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Input Form</title>
+        <title>Web Application</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -66,7 +66,7 @@ def main():
                 <input name="name" type="text" required>
                 <label for="message">Message:</label>
                 <input name="message" type="text" required>
-                <input type="submit" value="Submit!">
+                <input type="submit" value="Submit">
             </form>
         </div>
     </body>
