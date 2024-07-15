@@ -148,7 +148,7 @@ def echo_input():
             </ul>
             <div class="buttons">
                 <button class="button" onclick="window.history.back()">Back</button>&nbsp;&nbsp;
-                <a href="https://mscs-web-app-8aaa125138dd.herokuapp.com/" class="button">Retry</a>
+                <a href="https://mscs-web-app-flask-heroku-f431139cd4dd.herokuapp.com/" class="button">Retry</a>
             </div>
         </div>
     </body>
