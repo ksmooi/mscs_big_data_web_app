@@ -11,7 +11,7 @@ flask run
 ---8<------8<------8<------8<------8<------8<------8<------8<------8<------8<------8<------8<------8<---
 
 #Create a new directory for the application, and then make that directory your current working directory: 
-mkdir mscs_web_app && cd mscs_web_app
+mkdir mscs_web_app_flask_heroku && cd mscs_web_app_flask_heroku
 
 # Create the virtual environment and source the activation script:
 python3 -m venv venv && source venv/bin/activate
@@ -30,7 +30,7 @@ export FLASK_APP=src/app.py
 
 ---8<------8<------8<------8<------8<------8<------8<------8<------8<------8<------8<------8<------8<---
 
-https://github.com/ksmooi/mscs_web_app.git
+https://github.com/ksmooi/mscs_web_app_flask_heroku.git
 
 Afterwards, you will be presented with the URL for the remote repository. It typically follows the format git@github.com:<username>/<repo_name>.git.
 
